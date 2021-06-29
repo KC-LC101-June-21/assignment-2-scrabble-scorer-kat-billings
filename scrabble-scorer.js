@@ -92,9 +92,9 @@ function transform(objectToChange) {
 };
 
 let newPointStructure = {};
+transform(oldPointStructure);
 
 function runProgram() {
-   transform(oldPointStructure);
    let wordChoice = initialPrompt();
    let scoreChoice = scorerPrompt();
     console.log("\nScore for", wordChoice, ":", scoringAlgorithms[scoreChoice].scoreFunction(wordChoice));
